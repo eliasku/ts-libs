@@ -1,0 +1,21 @@
+{
+  "name": "@eliasku/fast-math",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.project.json",
+    "clean": "rimraf dist/ coverage/ *.tsbuildinfo",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.12",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}

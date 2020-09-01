@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "packages/fast-math/tsconfig.project.json"
+    }
+  ],
+  "files": []
+}
