@@ -37,7 +37,7 @@ jobs:
         CI: true
 
     - name: Test
-        run: pnpm test -r
-        env:
-          SHOW_SPAWN_CMD: true
-          CI: true
+      run: pnpm test -r
+      env:
+        SHOW_SPAWN_CMD: true
+        CI: true
