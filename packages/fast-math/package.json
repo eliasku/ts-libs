@@ -17,5 +17,13 @@
   },
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "type": "module"
+  "type": "module",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "eliasku/ts-libs",
+  "author": "Elias Ku",
+  "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/fast-math/#readme",
+  "bugs": "https://github.com/eliasku/ts-libs/issues"
 }
