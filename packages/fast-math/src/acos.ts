@@ -9,5 +9,4 @@ for (let i = 0; i < VALUES_SIZE; ++i) {
 }
 
 export const acos = (cos: number): number =>
-  (cos >= -1.0 && cos <= 1.0) ?
-    ACOS_TABLE[((1.0 + cos) * ACOS_STEP) | 0] : NaN;
+  cos >= -1.0 && cos <= 1.0 ? ACOS_TABLE[((1.0 + cos) * ACOS_STEP) | 0] : NaN;

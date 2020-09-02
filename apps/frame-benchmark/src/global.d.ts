@@ -1,1 +1,1 @@
-declare const DEBUG:boolean;
+declare const DEBUG: boolean;

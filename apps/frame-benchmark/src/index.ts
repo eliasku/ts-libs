@@ -1,4 +1,4 @@
-import {abs, absSMI, acos, ceil, cos, floor, round, sign, signSMI, sin} from '@eliasku/fast-math';
+import { abs, absSMI, acos, ceil, cos, floor, round, sign, signSMI, sin } from '@eliasku/fast-math';
 
 let acc = NaN;
 const N = 1000000;
@@ -59,7 +59,6 @@ function sign_smi() {
   return a;
 }
 
-
 function ceil_Math() {
   let a = 0.0;
   for (let i = 0; i < N; ++i) {
@@ -75,7 +74,6 @@ function ceil_fast() {
   }
   return a;
 }
-
 
 function floor_Math() {
   let a = 0.0;
@@ -192,8 +190,8 @@ function createContext2D() {
   document.body.append(canvas);
   canvas.width = (window.innerWidth * window.devicePixelRatio) | 0;
   canvas.height = (window.innerHeight * window.devicePixelRatio) | 0;
-  canvas.style.width = (window.innerWidth) + 'px';
-  canvas.style.height = (window.innerHeight) + 'px';
+  canvas.style.width = window.innerWidth + 'px';
+  canvas.style.height = window.innerHeight + 'px';
   const ctx = canvas.getContext('2d');
   if (!ctx) throw new Error();
   ctx.font = 'bold 24px serif';
@@ -205,7 +203,7 @@ const ctx = createContext2D();
 const colors: Dict<string> = {
   Math: '#f00',
   smi: '#0f0',
-  fast: '#00f'
+  fast: '#00f',
 };
 
 function loop(ts: number) {
