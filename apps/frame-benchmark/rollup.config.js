@@ -26,8 +26,8 @@ export default {
     commonjs(),
     replace({
       values: {
-        DEBUG: JSON.stringify(false),
-        'process.env.DEBUG': JSON.stringify(false)
+        _DEBUG: JSON.stringify(debug),
+        'process.env.DEBUG': JSON.stringify(debug)
       }
     }),
     babel({

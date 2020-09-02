@@ -157,10 +157,10 @@ function run2_acos() {
   return a;
 }
 
-type Dict<T> = {[key:string]:T};
+type Dict<T> = { [key: string]: T };
 
-const intervals:Dict<Dict<number>> = {};
-const cache:Dict<number> = {};
+const intervals: Dict<Dict<number>> = {};
+const cache: Dict<number> = {};
 
 function run(id: string, variant: string, fn: () => number) {
   const t = performance.now();
@@ -168,7 +168,7 @@ function run(id: string, variant: string, fn: () => number) {
   let m = intervals[id];
   if (!m) {
     m = {};
-    intervals[id] = m
+    intervals[id] = m;
   }
   m[variant] = (performance.now() - t) | 0;
   cache[variant] = acc;
@@ -187,24 +187,29 @@ function test2() {
   run('acos', 'Math', run2_acos);
 }
 
-const canvas = document.createElement('canvas');
-document.body.append(canvas);
-canvas.width = (window.innerWidth * window.devicePixelRatio) | 0;
-canvas.height = (window.innerHeight * window.devicePixelRatio) | 0;
-canvas.style.width = (window.innerWidth) + 'px';
-canvas.style.height = (window.innerHeight) + 'px';
-const ctx = canvas.getContext('2d')!;
-if(!ctx) throw new Error();
-ctx.font = 'bold 24px serif';
+function createContext2D() {
+  const canvas = document.createElement('canvas');
+  document.body.append(canvas);
+  canvas.width = (window.innerWidth * window.devicePixelRatio) | 0;
+  canvas.height = (window.innerHeight * window.devicePixelRatio) | 0;
+  canvas.style.width = (window.innerWidth) + 'px';
+  canvas.style.height = (window.innerHeight) + 'px';
+  const ctx = canvas.getContext('2d');
+  if (!ctx) throw new Error();
+  ctx.font = 'bold 24px serif';
+  return ctx;
+}
 
-const colors:Dict<string> = {
+const ctx = createContext2D();
+
+const colors: Dict<string> = {
   Math: '#f00',
   smi: '#0f0',
   fast: '#00f'
 };
 
-function loop(ts:number) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+function loop(ts: number) {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
   test1();
   test2();

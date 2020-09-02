@@ -13,7 +13,7 @@ const measure = (N: number, fn: (i: number) => number): number => {
     fn(i);
   }
   return performance.now() - t;
-}
+};
 
 test('sin-cos performance', () => {
   const N = 10000;

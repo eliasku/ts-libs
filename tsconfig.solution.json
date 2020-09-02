@@ -8,6 +8,9 @@
     },
     {
       "path": "apps/frame-benchmark/tsconfig.project.json"
+    },
+    {
+      "path": "toolchain/tsconfig.project.json"
     }
   ],
   "files": []
