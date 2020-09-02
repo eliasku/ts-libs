@@ -6,13 +6,13 @@ const INV_SIN_STEP = (2.0 * Math.PI) / TABLE_SIZE;
 const SIN_TABLE = new Float32Array(TABLE_SIZE);
 
 for (let i = 0; i < TABLE_SIZE; ++i) {
-    SIN_TABLE[i] = Math.sin(INV_SIN_STEP * i);
+  SIN_TABLE[i] = Math.sin(INV_SIN_STEP * i);
 }
 
 // Only FINITE values are allowed!
-export const sin = (angle: number) =>
-    SIN_TABLE[((angle * SIN_STEP) | 0) & TABLE_SIZE_MASK];
+export const sin = (angle: number): number =>
+  SIN_TABLE[((angle * SIN_STEP) | 0) & TABLE_SIZE_MASK];
 
 // Only FINITE values are allowed!
-export const cos = (angle: number) =>
-    SIN_TABLE[(((angle * SIN_STEP) | 0) + COS_STEP_SHIFT) & TABLE_SIZE_MASK];
+export const cos = (angle: number): number =>
+  SIN_TABLE[(((angle * SIN_STEP) | 0) + COS_STEP_SHIFT) & TABLE_SIZE_MASK];

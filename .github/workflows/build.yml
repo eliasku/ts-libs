@@ -2,13 +2,12 @@ name: Build
 
 on:
   push:
-    branches: [ master, develop ]
+    branches: [master, develop]
   pull_request:
-    branches: [ master, develop ]
+    branches: [master, develop]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -16,29 +15,29 @@ jobs:
         node-version: [14.x]
 
     steps:
-    - name: actions/checkout
-      uses: actions/checkout@v2
+      - name: actions/checkout
+        uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-        
-    - name: Setup
-      uses: pnpm/action-setup@v1.2.0
-      with:
-        version: 5.5.6
-        run_install: |
-          recursive: true
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: pnpm build -r
-      env:
-        SHOW_SPAWN_CMD: true
-        CI: true
+      - name: Setup
+        uses: pnpm/action-setup@v1.2.0
+        with:
+          version: 5.5.6
+          run_install: |
+            recursive: true
 
-    - name: Test
-      run: pnpm test -r
-      env:
-        SHOW_SPAWN_CMD: true
-        CI: true
+      - name: Build
+        run: pnpm build -r
+        env:
+          SHOW_SPAWN_CMD: true
+          CI: true
+
+      - name: Test
+        run: pnpm test -r
+        env:
+          SHOW_SPAWN_CMD: true
+          CI: true

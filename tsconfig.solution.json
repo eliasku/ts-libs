@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "packages/fast-math/tsconfig.project.json"
+    },
+    {
+      "path": "apps/frame-benchmark/tsconfig.project.json"
     }
   ],
   "files": []

@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "noEmit": true,
     "baseUrl": ".",
@@ -8,5 +8,7 @@
     "emitDecoratorMetadata": true,
     "rootDir": "./src"
   },
-  "include": ["./src/**/*.ts"]
+  "include": [
+    "./src/**/*.ts"
+  ]
 }

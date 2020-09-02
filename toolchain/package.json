@@ -1,16 +1,13 @@
 {
   "name": "toolchain",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
-  "sideEffects": false,
   "scripts": {
     "build": "echo tsc -p tsconfig.project.json",
     "clean": "rimraf dist/ coverage/ *.tsbuildinfo",
-    "test": "echo jest",
-    "coverage": "echo jest --coverage"
+    "coverage": "echo jest --coverage",
+    "test": "echo jest"
   },
   "devDependencies": {
     "@types/jest": "^26.0.12",
@@ -18,5 +15,8 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
-  }
+  },
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "type": "module"
 }

@@ -5,13 +5,16 @@
     "rootDir": "src",
     "outDir": "dist"
   },
-  "references": [],
+  "references": [
+    {
+      "path": "../../packages/fast-math/tsconfig.project.json"
+    }
+  ],
   "include": [
     "./src/**/*.ts"
   ],
   "exclude": [
     "**/node_modules",
-    "dist/**",
-    "src/**/__tests__/**/*.ts"
+    "dist/**"
   ]
 }

@@ -6,7 +6,12 @@
     "isolatedModules": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "paths": {
+      "@eliasku/fast-math": [
+        "../../packages/fast-math/src"
+      ]
+    }
   },
   "include": [
     "./src/**/*.ts"
