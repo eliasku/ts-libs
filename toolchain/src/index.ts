@@ -6,6 +6,6 @@ const argv = yargs
   .help()
   .argv;
 
-if (argv._.includes('pre-commit')) {
+if(argv._.includes('pre-commit')){
   await preCommit();
 }
