@@ -27,6 +27,7 @@
     "typescript": "^4.0.2",
     "@qiwi/multi-semantic-release": "^3.8.3",
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.0.7",
     "@semantic-release/npm": "^7.0.5",
@@ -48,5 +49,8 @@
     "projects": [
       "<rootDir>/packages/fast-math/jest.config.js"
     ]
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
