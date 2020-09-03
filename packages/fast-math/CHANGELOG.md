@@ -1,3 +1,10 @@
+## @eliasku/fast-math [1.1.2](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.1...@eliasku/fast-math@1.1.2) (2020-09-03)
+
+
+### Bug Fixes
+
+* **fast-math:** use PI_2 const ([bd62681](https://github.com/eliasku/ts-libs/commit/bd62681f3d8676e739d5dd7d7d807f69e0b9f1b3))
+
 ## @eliasku/fast-math [1.1.1](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.0...@eliasku/fast-math@1.1.1) (2020-09-03)
 
 
