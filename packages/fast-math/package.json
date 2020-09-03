@@ -6,7 +6,8 @@
     "build": "tsc -p tsconfig.project.json",
     "clean": "rimraf dist/ coverage/ *.tsbuildinfo",
     "coverage": "jest --coverage",
-    "test": "jest"
+    "test": "jest",
+    "postversion": "cd ../.. && pnpm -r i"
   },
   "devDependencies": {
     "@types/jest": "^26.0.13",

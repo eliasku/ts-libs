@@ -6,8 +6,7 @@
     "solution:rebuild": "pnpm clean -r && tsc -b -v tsconfig.solution.json",
     "solution:watch": "pnpm clean -r && tsc -b -w -v tsconfig.solution.json",
     "upgrade": "pnpm update -L -i -r",
-    "release": "multi-semantic-release --execasync",
-    "postversion": "pnpm -r i && echo ROOT"
+    "release": "multi-semantic-release --execasync"
   },
   "resolutions": {
     "multi-semantic-release/execa": "3.8.3"
