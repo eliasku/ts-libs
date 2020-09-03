@@ -1,3 +1,18 @@
+## @eliasku/temp-pkg [1.0.5](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.4...@eliasku/temp-pkg@1.0.5) (2020-09-03)
+
+
+### Bug Fixes
+
+* **fast-math:** constant names ([ecffed0](https://github.com/eliasku/ts-libs/commit/ecffed0e522cbf263f8f7348e6f45a4a584c2507))
+
+
+
+
+
+### Dependencies
+
+* **@eliasku/fast-math:** upgraded to 1.1.4
+
 ## @eliasku/temp-pkg [1.0.4](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.3...@eliasku/temp-pkg@1.0.4) (2020-09-03)
 
 
