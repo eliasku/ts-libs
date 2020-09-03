@@ -7,9 +7,8 @@
   },
   "dependencies": {
     "@eliasku/fast-math": "1.1.4",
-    "yargs": "^14.2.3"
+    "yargs": "^15.4.1"
   },
-  "devDependencies": {},
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "type": "module",
