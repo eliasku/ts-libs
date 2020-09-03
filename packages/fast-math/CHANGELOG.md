@@ -1,3 +1,11 @@
+## @eliasku/fast-math [1.1.3](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.2...@eliasku/fast-math@1.1.3) (2020-09-03)
+
+
+### Bug Fixes
+
+* **ci:** use --frozen-lockfile=false ([07c33b2](https://github.com/eliasku/ts-libs/commit/07c33b2058f9267c40c721080fa7c00a01ae1992))
+* **fast-math:** remove runtime for numbers ([01c71c3](https://github.com/eliasku/ts-libs/commit/01c71c3b6211168e30a60a3156b6a9e7061d1bc3))
+
 ## @eliasku/fast-math [1.1.2](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.1...@eliasku/fast-math@1.1.2) (2020-09-03)
 
 
