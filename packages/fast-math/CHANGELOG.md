@@ -1,3 +1,10 @@
+# @eliasku/fast-math [1.1.0](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.0.1...@eliasku/fast-math@1.1.0) (2020-09-03)
+
+
+### Features
+
+* **fast-math:** test release flow ([8df633e](https://github.com/eliasku/ts-libs/commit/8df633ecb860106d26b5967a5634f1e55912e069))
+
 ## @eliasku/fast-math [1.0.1](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.0.0...@eliasku/fast-math@1.0.1) (2020-09-03)
 
 
