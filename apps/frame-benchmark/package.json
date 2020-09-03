@@ -10,7 +10,7 @@
     "clean": "rimraf dist/ *.tsbuildinfo"
   },
   "dependencies": {
-    "@eliasku/fast-math": "workspace:0.0.1"
+    "@eliasku/fast-math": "workspace"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
