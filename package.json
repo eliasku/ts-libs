@@ -6,7 +6,8 @@
     "solution:rebuild": "pnpm clean -r && tsc -b -v tsconfig.solution.json",
     "solution:watch": "pnpm clean -r && tsc -b -w -v tsconfig.solution.json",
     "upgrade": "pnpm update -L -i -r",
-    "release": "pnpm update-lock && pnpm -r build",
+    "release": "pnpm -r build",
+    "version": "changeset version && pnpm update-lock",
     "update-lock": "pnpm -r i --frozen-lockfile=false && git add pnpm-lock.yaml"
   },
   "resolutions": {
