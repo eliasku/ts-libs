@@ -1,0 +1,34 @@
+{
+  "name": "@eliasku/temp-pkg",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.project.json",
+    "clean": "rimraf dist/ coverage/ *.tsbuildinfo",
+    "coverage": "jest --coverage",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@eliasku/fast-math": "workspace:1.1.1",
+    "yargs": "^14.2.3"
+  },
+  "devDependencies": {},
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "type": "module",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "README.md",
+    "lib"
+  ],
+  "author": "Elias Ku",
+  "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/test-pkg/#readme",
+  "bugs": "https://github.com/eliasku/ts-libs/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasku/ts-libs.git"
+  }
+}

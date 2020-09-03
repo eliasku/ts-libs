@@ -27,7 +27,7 @@
     "prettier": "^2.1.1",
     "prettier-plugin-package": "^1.0.0",
     "rimraf": "^3.0.2",
-    "toolchain": "workspace:0.0.0",
+    "toolchain": "workspace:*",
     "typescript": "^4.0.2",
     "@qiwi/multi-semantic-release": "^3.8.3",
     "@semantic-release/changelog": "^5.0.1",
