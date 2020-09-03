@@ -1,12 +1,12 @@
 {
   "name": "@eliasku/temp-pkg",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "lib/index.js",
   "scripts": {
     "postversion": "cd ../.. && pnpm update-lock"
   },
   "dependencies": {
-    "@eliasku/fast-math": "1.1.4",
+    "@eliasku/fast-math": "1.1.5",
     "yargs": "^15.4.1"
   },
   "types": "dist/index.d.ts",
