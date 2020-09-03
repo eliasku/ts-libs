@@ -6,7 +6,10 @@
     "solution:rebuild": "pnpm clean -r && tsc -b -v tsconfig.solution.json",
     "solution:watch": "pnpm clean -r && tsc -b -w -v tsconfig.solution.json",
     "upgrade": "pnpm update -L -i -r",
-    "release": "multi-semantic-release"
+    "release": "multi-semantic-release --execasync"
+  },
+  "resolutions": {
+    "multi-semantic-release/execa": "3.8.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.0.1",
@@ -24,7 +27,7 @@
     "prettier": "^2.1.1",
     "prettier-plugin-package": "^1.0.0",
     "rimraf": "^3.0.2",
-    "toolchain": "workspace:0.0.1",
+    "toolchain": "workspace:0.0.0",
     "typescript": "^4.0.2",
     "@qiwi/multi-semantic-release": "^3.8.3",
     "@semantic-release/changelog": "^5.0.1",
@@ -52,6 +55,8 @@
     ]
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*",
+    "toolchain"
   ]
 }

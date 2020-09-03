@@ -1,8 +1,8 @@
 {
   "name": "@eliasku/frame-benchmark-app",
-  "version": "0.0.1",
-  "main": "dist/index.js",
+  "version": "0.0.0",
   "private": true,
+  "main": "dist/index.js",
   "sideEffects": false,
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "clean": "rimraf dist/ *.tsbuildinfo"
   },
   "dependencies": {
-    "@eliasku/fast-math": "workspace:^1.0.0"
+    "@eliasku/fast-math": "workspace:1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
