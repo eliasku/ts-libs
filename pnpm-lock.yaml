@@ -108,7 +108,7 @@ importers:
       '@eliasku/fast-math': 'link:../fast-math'
       yargs: 14.2.3
     specifiers:
-      '@eliasku/fast-math': 1.1.1
+      '@eliasku/fast-math': 1.1.2
       yargs: ^14.2.3
   toolchain:
     dependencies:

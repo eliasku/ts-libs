@@ -7,6 +7,7 @@ import visualizer from 'rollup-plugin-visualizer';
 import replace from '@rollup/plugin-replace';
 
 const debug = false;
+const DEBUG_BABEL = false;
 
 export default {
   input: 'dist/index.js',
@@ -46,7 +47,7 @@ export default {
             modules: false,
             //spec: true,
             forceAllTransforms: false,
-            debug: true,
+            debug: DEBUG_BABEL,
           },
         ],
       ],
