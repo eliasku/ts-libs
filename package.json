@@ -6,7 +6,8 @@
     "solution:rebuild": "pnpm clean -r && tsc -b -v tsconfig.solution.json",
     "solution:watch": "pnpm clean -r && tsc -b -w -v tsconfig.solution.json",
     "upgrade": "pnpm update -L -i -r",
-    "release": "multi-semantic-release --execasync"
+    "release": "multi-semantic-release --execasync",
+    "update-lock": "pnpm -r i --frozen-lockfile=false && git add pnpm-lock.yaml"
   },
   "resolutions": {
     "multi-semantic-release/execa": "3.8.3"
