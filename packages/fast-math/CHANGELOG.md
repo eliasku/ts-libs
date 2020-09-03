@@ -1,3 +1,10 @@
+## @eliasku/fast-math [1.1.4](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.3...@eliasku/fast-math@1.1.4) (2020-09-03)
+
+
+### Bug Fixes
+
+* **fast-math:** constant names ([ecffed0](https://github.com/eliasku/ts-libs/commit/ecffed0e522cbf263f8f7348e6f45a4a584c2507))
+
 ## @eliasku/fast-math [1.1.3](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.2...@eliasku/fast-math@1.1.3) (2020-09-03)
 
 
