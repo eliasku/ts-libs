@@ -1,9 +1,9 @@
 {
   "name": "@eliasku/temp-pkg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "dependencies": {
-    "@eliasku/fast-math": "workspace:1.1.1",
+    "@eliasku/fast-math": "1.1.1",
     "yargs": "^14.2.3"
   },
   "devDependencies": {},
