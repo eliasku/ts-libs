@@ -22,6 +22,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "README.md",
+    "CHANGELOG.md",
+    "dist"
+  ],
   "repository": "eliasku/ts-libs",
   "author": "Elias Ku",
   "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/fast-math/#readme",
