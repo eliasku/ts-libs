@@ -1,5 +1,12 @@
 # @eliasku/frame-benchmark-app
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [72f56e7]
+  - @eliasku/fast-math@1.1.6
+
 ## 0.0.1
 
 ### Patch Changes

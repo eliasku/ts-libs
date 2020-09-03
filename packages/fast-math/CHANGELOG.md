@@ -1,5 +1,11 @@
 ## @eliasku/fast-math [1.1.4](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.3...@eliasku/fast-math@1.1.4) (2020-09-03)
 
+## 1.1.6
+
+### Patch Changes
+
+- 72f56e7: Test Changeset.
+
 ## 1.1.5
 
 ### Patch Changes
