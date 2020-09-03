@@ -45,3 +45,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_SPAWN_CMD: true
+          CI: true

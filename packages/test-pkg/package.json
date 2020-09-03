@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "main": "lib/index.js",
   "scripts": {
-    "postversion": "cd ../.. && pnpm -r i"
+    "postversion": "cd ../.. && pnpm -r i --frozen-lockfile=false"
   },
   "dependencies": {
     "@eliasku/fast-math": "1.1.2",
