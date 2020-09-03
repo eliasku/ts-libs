@@ -1,4 +1,4 @@
-import {cos, sin} from '..';
+import { cos, sin } from '..';
 
 test('cos sin non allowed numbers just returns something', () => {
   // TODO: better to make Debug-assert on isFinite and test Exception (DEBUG) and Pass (RELEASE)

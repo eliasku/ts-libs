@@ -1,7 +1,7 @@
-import {absSMI, signSMI} from "..";
+import { absSMI, signSMI } from '..';
 
 test('smi type', () => {
-  process.env.DEBUG = "true";
+  process.env.DEBUG = 'true';
   expect(() => absSMI(2 ** 32)).toThrowError('not SMI');
   expect(() => absSMI(0.01)).toThrowError('not SMI');
   expect(() => signSMI(2 ** 32)).toThrowError('not SMI');
