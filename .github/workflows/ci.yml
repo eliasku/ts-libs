@@ -1,9 +1,6 @@
-name: Release
+name: CI
 
-on:
-  push:
-    branches:
-      - master
+on: [push, pull_request]
 
 jobs:
   build:
@@ -41,8 +38,11 @@ jobs:
           SHOW_SPAWN_CMD: true
           CI: true
 
-      - name: Release
+      - name: Deploy
+        if: ${{ github.ref == 'refs/heads/master' }}
         run: pnpm release
         env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_SPAWN_CMD: true
           CI: true
