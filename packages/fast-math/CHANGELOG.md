@@ -1,3 +1,10 @@
+## @eliasku/fast-math [1.1.1](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.1.0...@eliasku/fast-math@1.1.1) (2020-09-03)
+
+
+### Bug Fixes
+
+* **fast-math:** sync package versions test ([d0a76ca](https://github.com/eliasku/ts-libs/commit/d0a76ca596243a77244503105738599f9b0817e5))
+
 # @eliasku/fast-math [1.1.0](https://github.com/eliasku/ts-libs/compare/@eliasku/fast-math@1.0.1...@eliasku/fast-math@1.1.0) (2020-09-03)
 
 
