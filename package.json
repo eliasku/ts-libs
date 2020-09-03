@@ -5,7 +5,8 @@
   "scripts": {
     "solution:rebuild": "pnpm clean -r && tsc -b -v tsconfig.solution.json",
     "solution:watch": "pnpm clean -r && tsc -b -w -v tsconfig.solution.json",
-    "upgrade": "pnpm update -L -i -r"
+    "upgrade": "pnpm update -L -i -r",
+    "release": "multi-semantic-release"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.0.1",

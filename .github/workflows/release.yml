@@ -42,7 +42,7 @@ jobs:
           CI: true
 
       - name: Release
-        run: multi-semantic-release
+        run: pnpm release
         env:
           SHOW_SPAWN_CMD: true
           CI: true
