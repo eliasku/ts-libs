@@ -1,6 +1,6 @@
 {
   "name": "@eliasku/temp-pkg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "scripts": {
     "postversion": "cd ../.. && pnpm -r i"
