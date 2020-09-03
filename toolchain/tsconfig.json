@@ -6,6 +6,7 @@
     "isolatedModules": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+
     "rootDir": "./src"
   },
   "include": ["./src/**/*.ts"]

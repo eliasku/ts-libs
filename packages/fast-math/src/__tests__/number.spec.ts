@@ -1,4 +1,4 @@
-import {abs, ceil, floor, round, sign} from "..";
+import { abs, ceil, floor, round, sign } from '..';
 
 test('abs number', () => {
   expect(abs(-1.0)).toBe(1);

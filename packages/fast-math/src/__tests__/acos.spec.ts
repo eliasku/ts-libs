@@ -1,4 +1,4 @@
-import {acos} from '..';
+import { acos } from '..';
 
 test('acos NaN cases', () => {
   expect(acos(-1.1)).toBeNaN();
@@ -20,7 +20,7 @@ test('acos zero precision', () => {
 test('acos range precision', () => {
   const N = 10;
   for (let i = 0; i <= N; ++i) {
-    const a = -1.0 + 2.0 * i / N;
+    const a = -1.0 + (2.0 * i) / N;
     expect(acos(a)).toBeCloseTo(Math.acos(a), 4);
   }
 });
