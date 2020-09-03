@@ -1,3 +1,18 @@
+## @eliasku/temp-pkg [1.0.4](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.3...@eliasku/temp-pkg@1.0.4) (2020-09-03)
+
+
+### Bug Fixes
+
+* **ci:** use --frozen-lockfile=false ([07c33b2](https://github.com/eliasku/ts-libs/commit/07c33b2058f9267c40c721080fa7c00a01ae1992))
+
+
+
+
+
+### Dependencies
+
+* **@eliasku/fast-math:** upgraded to 1.1.3
+
 ## @eliasku/temp-pkg [1.0.3](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.2...@eliasku/temp-pkg@1.0.3) (2020-09-03)
 
 
