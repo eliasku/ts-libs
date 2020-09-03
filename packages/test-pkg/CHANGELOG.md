@@ -1,3 +1,10 @@
+## @eliasku/temp-pkg [1.0.6](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.5...@eliasku/temp-pkg@1.0.6) (2020-09-03)
+
+
+### Bug Fixes
+
+* **update:** dependencies ([0b21e53](https://github.com/eliasku/ts-libs/commit/0b21e533382c2dbebce1ec23810a7479f8d18cba))
+
 ## @eliasku/temp-pkg [1.0.5](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.4...@eliasku/temp-pkg@1.0.5) (2020-09-03)
 
 
