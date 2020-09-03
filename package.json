@@ -11,20 +11,28 @@
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-node": "^11.1.0",
-    "pnpm": "^5.5.9",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13",
+    "pnpm": "^5.5.10",
     "prettier": "^2.1.1",
     "prettier-plugin-package": "^1.0.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "rimraf": "^3.0.2",
-    "typescript": "^4.0.2",
     "toolchain": "workspace:0.0.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.13"
+    "typescript": "^4.0.2",
+    "@qiwi/multi-semantic-release": "^3.8.3",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "semantic-release": "^17.1.1",
+    "jest": "^26.4.2"
   },
   "husky": {
     "hooks": {
@@ -34,5 +42,11 @@
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
     "*.{json,md,yaml,yml}": "prettier --write"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "projects": [
+      "<rootDir>/packages/fast-math/jest.config.js"
+    ]
   }
 }
