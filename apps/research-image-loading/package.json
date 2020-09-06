@@ -1,5 +1,5 @@
 {
-  "name": "@eliasku/frame-benchmark-app",
+  "name": "@eliasku/research-image-loading",
   "version": "0.0.2",
   "private": true,
   "main": "dist/index.js",
@@ -8,9 +8,6 @@
   "scripts": {
     "build": "tsc -p tsconfig.project.json && rollup -c",
     "clean": "rimraf dist/ *.tsbuildinfo"
-  },
-  "dependencies": {
-    "@eliasku/fast-math": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
