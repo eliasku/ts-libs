@@ -2,9 +2,6 @@
   "name": "@eliasku/temp-pkg",
   "version": "1.0.8",
   "main": "lib/index.js",
-  "scripts": {
-    "postversion": "cd ../.. && pnpm update-lock"
-  },
   "dependencies": {
     "@eliasku/fast-math": "1.1.6",
     "yargs": "^15.4.1"
@@ -18,6 +15,7 @@
   },
   "files": [
     "README.md",
+    "CHANGELOG.md",
     "lib"
   ],
   "author": "Elias Ku",
