@@ -9,7 +9,7 @@
     "release": "changeset publish",
     "version": "changeset version && pnpm update-lock",
     "update-lock": "pnpm -r i --frozen-lockfile=false && git add pnpm-lock.yaml",
-    "test:ci": "jest --coverage",
+    "test:ci": "jest",
     "coveralls": "coveralls < coverage/lcov.info"
   },
   "devDependencies": {
@@ -45,7 +45,8 @@
   "jest": {
     "collectCoverage": true,
     "projects": [
-      "<rootDir>/packages/fast-math/jest.config.js"
+      "<rootDir>/packages/fast-math/jest.config.js",
+      "<rootDir>/packages/binpack/jest.config.js"
     ]
   },
   "workspaces": [
