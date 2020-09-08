@@ -1,5 +1,13 @@
 ## @eliasku/temp-pkg [1.0.6](https://github.com/eliasku/ts-libs/compare/@eliasku/temp-pkg@1.0.5...@eliasku/temp-pkg@1.0.6) (2020-09-03)
 
+## 1.0.9
+
+### Patch Changes
+
+- bd1547b: upgrade dependencies
+- Updated dependencies [bd1547b]
+  - @eliasku/fast-math@1.1.7
+
 ## 1.0.8
 
 ### Patch Changes
