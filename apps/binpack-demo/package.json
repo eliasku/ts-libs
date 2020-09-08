@@ -1,16 +1,16 @@
 {
-  "name": "@eliasku/frame-benchmark-app",
-  "version": "0.0.2",
+  "name": "@eliasku/binpack-demo",
+  "version": "1.0.0",
   "private": true,
   "main": "dist/index.js",
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.project.json && rollup -c",
-    "clean": "rimraf dist/ *.tsbuildinfo"
+    "build": "tsc -b tsconfig.project.json && rollup -c",
+    "clean": "rimraf dist/ *.tsbuildinfo bundle/"
   },
   "dependencies": {
-    "@eliasku/fast-math": "workspace:*"
+    "@eliasku/binpack": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

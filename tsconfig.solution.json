@@ -7,7 +7,22 @@
       "path": "packages/fast-math/tsconfig.project.json"
     },
     {
+      "path": "packages/binpack/tsconfig.project.json"
+    },
+    {
+      "path": "packages/zipfile/tsconfig.project.json"
+    },
+    {
+      "path": "packages/polykit/tsconfig.project.json"
+    },
+    {
       "path": "apps/frame-benchmark/tsconfig.project.json"
+    },
+    {
+      "path": "apps/binpack-demo/tsconfig.project.json"
+    },
+    {
+      "path": "apps/research-image-loading/tsconfig.project.json"
     },
     {
       "path": "toolchain/tsconfig.project.json"
