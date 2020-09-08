@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && pnpm build:solution"
+      "pre-commit": "pnpm i --frozen-lockfile && lint-staged && pnpm build:solution"
     }
   },
   "lint-staged": {
