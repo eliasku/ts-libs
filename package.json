@@ -8,7 +8,7 @@
     "upgrade": "pnpm update -L -i -r",
     "release": "changeset publish",
     "version": "changeset version && pnpm update-lock",
-    "update-lock": "pnpm -r i --frozen-lockfile=false && git add pnpm-lock.yaml",
+    "update-lock": "pnpm i --frozen-lockfile=false && git add pnpm-lock.yaml",
     "test:ci": "jest",
     "coveralls": "coveralls < coverage/lcov.info",
     "lint": "eslint . --cache --fix"
