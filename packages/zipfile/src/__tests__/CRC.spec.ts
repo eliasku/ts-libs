@@ -50,7 +50,6 @@ describe('crc', () => {
     let catchError: Error | undefined = undefined;
     try {
       const data = await badZip.readAsTextAsync(testFileEntryName);
-      //console.log(data);
       // , 'Bad CRC: buffer is not empty');
       expect(data.length).toBeGreaterThan(0);
     } catch (err) {

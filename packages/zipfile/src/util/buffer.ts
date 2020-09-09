@@ -10,13 +10,6 @@ export function writeUInt16LE(buf: Uint8Array, value: number, offset: number): v
   buf[offset++] = (value >>> 8) & 0xff;
 }
 
-export function writeInt32LE(buf: Uint8Array, value: number, offset: number): void {
-  buf[offset++] = value & 0xff;
-  buf[offset++] = (value >>> 8) & 0xff;
-  buf[offset++] = (value >>> 16) & 0xff;
-  buf[offset++] = value >>> 24;
-}
-
 export function readUInt32LE(buf: Uint8Array, offset: number): number {
   return (
     (buf[offset] | (buf[offset + 1] << 8) | (buf[offset + 2] << 16)) + buf[offset + 3] * 0x1000000

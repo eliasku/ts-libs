@@ -310,14 +310,6 @@ export class PackerState {
     this.flags.push(Flag.Empty);
   }
 
-  get size() {
-    return this.rects.length;
-  }
-
-  get empty() {
-    return this.rects.length === 0;
-  }
-
   isPacked(i: number): boolean {
     return (this.flags[i] & Flag.Packed) !== 0;
   }
@@ -481,11 +473,7 @@ function tryPackState(state: PackerState, method: Method, rotate: boolean): Pack
   return status;
 }
 
-export function packNodes(
-  state: PackerState,
-  method: Method = Method.All,
-  rotate = true,
-): PackStatus {
+export function packNodes(state: PackerState, method: Method, rotate: boolean): PackStatus {
   state.w = state.h = packStartSize;
   estimateSize(state, getRectsArea(state.rects), state.maxWidth, state.maxHeight);
   let status = tryPackState(state, method, rotate);
@@ -555,8 +543,7 @@ export function pack(rects: InputRect[], options: InputOptions): PackResult {
       if (rect.w > 0 && rect.h > 0) {
         const padding = rect.padding ?? 0;
         if (!Number.isInteger(padding) || padding < 0) {
-          console.error('rect padding should be integer > 0');
-          throw 'bad input rect data';
+          throw 'rect padding should be integer > 0';
         }
         const w = rect.w + (padding << 1);
         const h = rect.h + (padding << 1);

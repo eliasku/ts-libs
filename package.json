@@ -9,7 +9,7 @@
     "release": "changeset publish",
     "version": "changeset version && pnpm update-lock",
     "update-lock": "pnpm i --frozen-lockfile=false && git add pnpm-lock.yaml",
-    "test:ci": "jest",
+    "test:ci": "jest --coverage",
     "coveralls": "coveralls < coverage/lcov.info",
     "lint": "eslint . --cache --fix"
   },
@@ -52,7 +52,6 @@
     ]
   },
   "jest": {
-    "collectCoverage": true,
     "projects": [
       "<rootDir>/packages/*/jest.config.js"
     ]

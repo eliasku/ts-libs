@@ -1,9 +1,6 @@
-import { readUInt32LE, writeInt32LE } from './buffer';
-
-let CRC_32_TABLE: undefined | Uint32Array = undefined;
+const CRC_32_TABLE = createCRC32Table();
 
 function createCRC32Table() {
-  const b = new Uint8Array(4);
   const table = new Uint32Array(256);
   for (let n = 0; n < table.length; ++n) {
     let c = n;
@@ -14,28 +11,15 @@ function createCRC32Table() {
         c = c >>> 1;
       }
     }
-    if (c < 0) {
-      writeInt32LE(b, c, 0);
-      c = readUInt32LE(b, 0);
-    }
-    table[n] = c;
+    table[n] = c >>> 0;
   }
   return table;
 }
 
 export function crc32(buf: Uint8Array): number {
-  if (CRC_32_TABLE === undefined) {
-    CRC_32_TABLE = createCRC32Table();
+  let c1 = ~0;
+  for (let i = 0; i < buf.length; ++i) {
+    c1 = CRC_32_TABLE[(c1 ^ buf[i]) & 0xff] ^ (c1 >>> 8);
   }
-  let crc = 0;
-  let off = 0;
-  let len = buf.length;
-  let c1 = ~crc;
-  while (--len >= 0) {
-    c1 = CRC_32_TABLE[(c1 ^ buf[off++]) & 0xff] ^ (c1 >>> 8);
-  }
-  crc = ~c1;
-  const b = new Uint8Array(4);
-  writeInt32LE(b, crc & 0xffffffff, 0);
-  return readUInt32LE(b, 0);
+  return ~c1 >>> 0;
 }

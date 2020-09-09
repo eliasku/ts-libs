@@ -92,7 +92,7 @@ export class ZipEntry {
       case Constants.DEFLATED: {
         const data = inflate(compressedData);
         if (!this.crc32OK(data)) {
-          console.warn(Errors.BAD_CRC + ' ' + decodeString(this._entryName));
+          console.warn(Errors.BAD_CRC, decodeString(this._entryName));
         }
         return data;
       }
@@ -122,7 +122,7 @@ export class ZipEntry {
       case Constants.DEFLATED: {
         const data = await inflateAsync(compressedData);
         if (!this.crc32OK(data)) {
-          console.warn(Errors.BAD_CRC + ' ' + decodeString(this._entryName));
+          console.warn(Errors.BAD_CRC, decodeString(this._entryName));
         }
         return data;
       }
