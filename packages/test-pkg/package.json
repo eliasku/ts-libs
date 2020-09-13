@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "@eliasku/fast-math": "1.1.7",
-    "yargs": "^15.4.1"
+    "yargs": "^16.0.3"
   },
   "types": "dist/index.d.ts",
   "sideEffects": false,

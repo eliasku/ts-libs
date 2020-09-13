@@ -1,6 +1,6 @@
 {
-  "name": "@eliasku/binpack",
-  "version": "1.0.1",
+  "name": "@eliasku/easing",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -27,7 +27,7 @@
     "dist"
   ],
   "author": "Elias Ku",
-  "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/binpack/#readme",
+  "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/easing/#readme",
   "bugs": "https://github.com/eliasku/ts-libs/issues",
   "repository": {
     "type": "git",

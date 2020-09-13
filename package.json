@@ -6,6 +6,7 @@
     "build:solution": "pnpm clean -r && tsc -b -v tsconfig.solution.json",
     "watch:solution": "pnpm clean -r && tsc -b -w -v tsconfig.solution.json",
     "upgrade": "pnpm update -L -i -r",
+    "clean": "rimraf \"{packages,apps}/*/{dist,bundle}/\" coverage/ ./**/*.tsbuildinfo",
     "release": "changeset publish",
     "version": "changeset version && pnpm update-lock",
     "update-lock": "pnpm i --frozen-lockfile=false && git add pnpm-lock.yaml",
@@ -17,22 +18,22 @@
     "@changesets/cli": "^2.10.2",
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "@typescript-eslint/parser": "^4.1.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jest": "^24.0.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
-    "ts-jest": "^26.3.0",
     "lint-staged": "^10.3.0",
-    "pnpm": "^5.5.12",
+    "pnpm": "^5.5.13",
     "prettier": "^2.1.1",
     "prettier-plugin-package": "^1.0.0",
     "rimraf": "^3.0.2",
     "toolchain": "workspace:*",
+    "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
   },
   "husky": {
@@ -53,7 +54,7 @@
   },
   "jest": {
     "projects": [
-      "<rootDir>/packages/*/jest.config.js"
+      "packages/*"
     ]
   },
   "workspaces": [

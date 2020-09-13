@@ -1,21 +1,21 @@
 {
-  "name": "@eliasku/binpack",
-  "version": "1.0.1",
+  "name": "@eliasku/random",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "sideEffects": false,
+  "type": "module",
   "scripts": {
     "build": "tsc -b tsconfig.project.json",
     "clean": "rimraf dist/ coverage/ *.tsbuildinfo",
     "test": "jest"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
-    "typescript": "^4.0.2",
-    "ts-jest": "^26.3.0",
+    "@types/jest": "^26.0.13",
     "jest": "^26.4.2",
-    "@types/jest": "^26.0.13"
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
   },
   "license": "ISC",
   "publishConfig": {
@@ -27,7 +27,7 @@
     "dist"
   ],
   "author": "Elias Ku",
-  "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/binpack/#readme",
+  "homepage": "https://github.com/eliasku/ts-libs/tree/master/packages/random/#readme",
   "bugs": "https://github.com/eliasku/ts-libs/issues",
   "repository": {
     "type": "git",

@@ -4,17 +4,4 @@ export default {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
-  // coveragePathIgnorePatterns: [
-  //     "<rootDir>/dist"
-  // ],
-  coverageReporters: ['json', 'lcov', 'text'],
-  coverageThreshold: {
-    global: {
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      statements: 100,
-    },
-  },
 };

@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p tsconfig.project.json",
-    "clean": "rimraf dist/ coverage/ *.tsbuildinfo"
+    "clean": "rimraf dist/ coverage/ *.tsbuildinfo",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^26.0.13",
