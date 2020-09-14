@@ -27,13 +27,12 @@ export class Random {
     return this.random() <= prob;
   }
 
-  element<T>(array: T[]): T | undefined {
-    const m = array.length;
-    if (m <= 0) {
-      return undefined;
+  element<T>(array: T[]): T {
+    const len = array.length;
+    if (len <= 0) {
+      throw new RangeError();
     }
-    const i = this.engine.next() % m; //this.roll(m);
-    return array[i];
+    return array[this.roll(len)];
   }
 
   set seed(value: number) {
