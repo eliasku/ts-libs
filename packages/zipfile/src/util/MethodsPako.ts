@@ -1,4 +1,4 @@
-import * as pako from 'pako';
+import pako from 'pako';
 
 export function deflate(buffer: Uint8Array): Uint8Array {
   return pako.deflateRaw(buffer);
